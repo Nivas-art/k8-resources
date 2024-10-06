@@ -6,11 +6,11 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  env:
-  - name: CONFIGMAP_USERNAME
-    valueFrom:
-      configMapKeyRef:
-        name: config
-        key: username
+    env:
+    - name: CONFIGMAP_USERNAME
+      valueFrom:
+        configMapKeyRef:
+          name: config
+          key: username
 
       
