@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: from-map
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: allmaps
+      valueFrom:
+        configMapRef:
+          name: config-map
+          
