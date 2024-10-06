@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secrate-pod
+spec:
+  conytainers:
+  - name: nginx
+    image: nginx
+    volumes:
+    - name: secrete-pod
+      secret:
+        secretName: secrete
