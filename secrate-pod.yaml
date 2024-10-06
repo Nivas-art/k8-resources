@@ -3,9 +3,10 @@ kind: Pod
 metadata:
   name: secrate-pod
 spec:
-  conytainers:
+  containers:
   - name: nginx
     image: nginx
-    envFrom:
-    - secretKeyRef:
-        name: secrete 
+    volumes:
+    - name: secrete-pod
+      secret:
+        secretName: secrete
