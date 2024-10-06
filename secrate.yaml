@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: secrets
+metadata:
+  name: secrete
+data:
+  username: QWRtaW4K
+  pwd: QWRtaW5AMTIzCg==
