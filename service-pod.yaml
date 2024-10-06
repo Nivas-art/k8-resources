@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: service
 spec:
-  selectors:
+  selector:
     environment: "dev"
     course: "aws"
   ports:
