@@ -19,9 +19,9 @@ spec:
         app: nginx
         project: for-deploy
         env: dev
-  spec:
-    containers:
-    - name: nginx
-      image: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
 
     
