@@ -13,12 +13,12 @@ spec:
       project: for-deploy
       env: dev
   template:
-  metadata:
-    name: deployement
-    labels:
-      app: nginx
-      project: for-deploy
-      env: dev
+    metadata:
+      name: deployement
+      labels:
+        app: nginx
+        project: for-deploy
+        env: dev
   spec:
     containers:
     - name: nginx
