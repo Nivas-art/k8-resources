@@ -4,20 +4,20 @@ metadata:
   name: replic
   labels:
     env: dev
-    replica: yes
+    replica: created
 spec:
   replicas: 3 #3 pods created
   selector:
     matchLabels:
       tier: app
       project: expense
-      replicaset: yes
+      replicaset: created
   template:
     metadata:
       labels:
         tier: app
         project: expense
-        replicaset: yes
+        replicaset: created
     spec:
       containers:
       - name: nginx
